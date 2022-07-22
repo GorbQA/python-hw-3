@@ -14,7 +14,7 @@ def calc(left_operand, right_operand, operation):
             rez=l_int/r_int
         case '%':
             rez=l_int%r_int
-    print(l_int,op,r_int,"=",int(rez))
+    print(l_int,op,r_int,"=",rez)
 list_sys=sys.argv[1:]
 str_list_sys="".join(list_sys)
 for i in range(len(str_list_sys)):
