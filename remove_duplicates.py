@@ -1,7 +1,6 @@
 
 def remove_duplicates(array):
     array_edit=array.copy()
-    array_edit.sort()
     i=0
     while i<(len(array_edit)-1):
         if array_edit[i]==array_edit[i+1]:
