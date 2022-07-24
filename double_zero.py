@@ -1,19 +1,22 @@
 from array import array
 from multiprocessing.dummy import Array
 
-def double_zero(array_input_rez):
+def double_zero(array):
+    array_edit=array.copy()
     i=0
-    while i<len(array_input_rez):
-        if array_input_rez[i]==0:
-            array_input_rez.insert(i+1,0)
+    while i<len(array_edit):
+        if array_edit[i]==0:
+            array_edit.insert(i+1,0)
             i+=2
         else:i+=1
-    return(array_input_rez)
-str_inp=input("Введи текст не менше п'яти символів ")
+    return (array_edit)
+str_inp=input("Enter number ")
 try:
     array_input=list(map(int,str_inp))
-    if len(array_input)<len(double_zero(array_input)):
-        print('Zeros doubled',double_zero(array_input))
-    else:print('Does not contain zeros',double_zero(array_input))
+    array_input_rez=double_zero(array_input)
+    if len(array_input)!=len(array_input_rez):
+        print('Zeros doubled',array_input_rez)
+    else:
+        print('Does not contain zeros',array_input)
 except ValueError:print('Type only numbers')
 
