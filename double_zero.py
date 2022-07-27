@@ -1,5 +1,6 @@
 from array import array
 from multiprocessing.dummy import Array
+import sys
 
 def double_zero(array):
     array_edit=array.copy()

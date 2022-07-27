@@ -1,3 +1,4 @@
+import sys
 
 def remove_duplicates(array):
     array_edit=array.copy()
