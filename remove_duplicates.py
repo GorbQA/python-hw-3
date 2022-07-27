@@ -7,7 +7,7 @@ def remove_duplicates(array):
             array_edit.pop(i+1)
         else:i+=1
     return(array_edit)
-str_inp=input("Enter number ")
+str_inp='0011122334'
 try:
     array_input=list(map(int,str_inp))
     array_input_rez=remove_duplicates(array_input)

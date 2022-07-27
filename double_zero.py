@@ -10,7 +10,7 @@ def double_zero(array):
             i+=2
         else:i+=1
     return (array_edit)
-str_inp=input("Enter number ")
+str_inp="10230450"
 try:
     array_input=list(map(int,str_inp))
     array_input_rez=double_zero(array_input)
